@@ -1,0 +1,22 @@
+body
+{
+    background-color: #1f1f1f ;
+}
+h1
+{
+    color: #3a0173 ;
+}
+#img1
+{
+    position: relative;
+    left: 150px;
+}
+button:hover
+{
+    background-color: #0c0326;
+}
+footer
+{
+    background-color:#3a0173; 
+    color:white
+}

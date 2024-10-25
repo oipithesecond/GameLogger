@@ -1,3 +1,0 @@
-# GameLogger
-
-making a project
