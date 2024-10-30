@@ -15,26 +15,14 @@ header{
     background-color:rgb(28, 27, 27); 
     color:#3a0173
 }
-.card{
-    border: 1px solid rgb(213, 213, 213);
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.406);
-    color: hsl(0, 0%, 55%);
-    padding: 20px;
-    margin: 10px;
-    text-align: left;
-    max-width:250px;
-    display:inline-block
-
-}
-.card .gameposter{
+.gameposter{
     max-width: 60%;
     height: auto;
     margin-bottom: 10px;
 
 
 }
-.card .gametitle{
+.gametitle{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
