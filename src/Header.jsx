@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Header(props){
+function Header(props) {
     const headerStyles = {
         backgroundColor: "rgb(28, 27, 27)",
         color: "#a35ff5",
@@ -8,7 +9,7 @@ function Header(props){
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center"
-    }
+    };
     const navStyles = {
         display: "flex",
         listStyleType: "none",
@@ -21,22 +22,23 @@ function Header(props){
         textDecoration: "none",
         fontSize: "16px"
     };
-    return(
+
+    return (
         <header style={headerStyles}>
             <h1>GameLogger</h1>
             <nav>
                 <ul style={navStyles}>
-                    <li><a href="#" style={linkStyles}>Games</a></li>
-                    <li><a href="#" style={linkStyles}>New Releases</a></li>
+                    <li><Link to="/games" style={linkStyles}>Games</Link></li>
+                    <li><Link to="/new-releases" style={linkStyles}>New Releases</Link></li>
                     {
                         props.isLoggedIn
-                        ?<li><a href="#" style={linkStyles}>{props.username}</a></li>
-                        :<li><a href="#" style={linkStyles}>Profile</a></li>
+                        ? <li><Link to="/profile" style={linkStyles}>{props.username}</Link></li>
+                        : <li><Link to="/login" style={linkStyles}>Profile</Link></li>
                     }
                 </ul>
             </nav>
         </header>
-    )
+    );
 }
 
-export default Header
+export default Header;

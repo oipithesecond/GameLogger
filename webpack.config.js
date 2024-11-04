@@ -29,6 +29,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   devServer: {
+    historyApiFallback: true, 
     static: {
       directory: path.join(__dirname, 'dist'),
     },
